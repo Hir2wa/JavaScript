@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maskify(cc) {
+            if (cc.length <=4) {
+              return cc;
+            }
+             let maskedPart = '#'.repeat(cc.length - 4);
+             let giveMaskedpart = cc.slice(-4);
+             return maskedPart + giveMaskedpart;
+           }
+           console.log(maskify("3578478474784784"));
+
+             let  arrry = [5,6,7,8,9,4,9];
+             console.log(Math.max(...arrry));
+             // challeng 3
+             function highAndLow(numbers) {
+                let arr = numbers.split(' ').map(Number);  
+                return Math.max(...arr) + ' ' + Math.min(...arr);
+              }
+              
+              console.log(highAndLow("1 2 3 4 5"));   
+              console.log(highAndLow("1 2 -3 4 5"));  
+              console.log(highAndLow("1 9 3 4 -5"));   
+              
+              function DNAStrand(dna) {
+                
+                const complements = {
+                  'A': 'T',
+                  'T': 'A',
+                  'C': 'G',
+                  'G': 'C'
+                };
+                
+              
+                return dna.split('').map(nucleotide => complements[nucleotide]).join('');
+              }
+              
+              console.log(DNAStrand("ATTGC")); 
+              console.log(DNAStrand("GTAT"));   
+              
+    </script>
+</body>
+</html>
