@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in Browser</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script>
+       let i = 1;
+       while(i<5){
+        console.log(i);
+        i++
+       }
+       //object 
+       let studentss = {
+        name : 'fabrice',
+        dept:'soft' ,
+        age: 30
+        
+       };
+       studentss.country = 'Rwanda';
+       console.log(studentss);
+       console.log(studentss.age);
+
+       console.log(studentss.dept);
+
+
+
+       //array
+       let otherStudent = [ 'alain', 'fabrice', 'hirwa'];
+       let student = ['fabrice', 'alain' ,'hirwa'];
+       console.log(student[1]);
+       student.push('ALAIN');
+       console.log(student)
+       student.pop('ALAIN');
+       console.log(student)
+       student.splice(1,1,'fabrice');
+       console.log(student)
+       let conca= student.concat(otherStudent);
+       console.log(conca);
+
+       //arrray of object 
+       let stu = [
+       { a:'alain ' , b:'fabrice' ,c: 'hirwa '},
+           {b:'hirwa' , g:'fabrice' , f:'hirwa' } 
+       
+       ];
+       console.log(stu[0].c);
+
+       
+         
+
+
+       
+
+
+    </script>
+</body>
+</html>
